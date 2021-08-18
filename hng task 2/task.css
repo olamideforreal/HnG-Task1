@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+.background {
+  position: relative;
+  background-image: url("https://img.wallpapersafari.com/desktop/800/450/5/73/uRXmpH.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  top: 70px;
+  color: aliceblue;
+  font-size: 150px;
+  font-family: "Dancing Script", sans-serif;
+}
+
+h2 {
+  position: relative;
+  top: -100px;
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  left: 45%;
+}
+
+#signature {
+  stroke-dasharray: 2000;
+  z-index: 10;
+  stroke-dashoffset: 2000;
+
+  animation: sign 10s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dasharray: 1000;
+  }
+}
+
+/* i {
+  z-index: 100;
+  position: absolute;
+  font-size: 100px;
+  background-color: blue;
+} */
+
+main {
+  /* position: absolute; */
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.intro img {
+  padding: 90px;
+  position: relative;
+  border-radius: 35%;
+  object-fit: cover;
+  height: 480px;
+  width: 300px;
+  /* left: -40px; */
+
+  overflow: hidden;
+  /* object-position: center; */
+}
+
+#int {
+  color: rgb(35, 100, 62);
+  left: 140px;
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+  font-size: 47px;
+}
+
+h3 {
+  /* position: absolute; */
+  /* margin-bottom: 50px; */
+  /* top: 920px; */
+  /* left: 600px; */
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  color: rgb(39, 80, 56);
+}
+
+.contact {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  font-size: 27px;
+  font-weight: 900;
+  margin: 20px;
+  padding: 0 20px;
+}
